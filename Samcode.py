@@ -4,7 +4,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 
 
-df = pd.read_csv(r"//")
+df = pd.read_csv(r"dataset path")
 
 
 df['label'] = pd.to_numeric(df['label'], errors='coerce')
