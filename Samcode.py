@@ -45,4 +45,4 @@ model.fit(X_train, y_train, epochs=10, validation_data=(X_val, y_val))
 
 model.save(r"model path")
 
-print("✅ Model training complete and saved to 'samreddy pragament\\best_model.h5'")
+print(" Model training complete and saved to 'samreddy pragament\\best_model.h5'")
