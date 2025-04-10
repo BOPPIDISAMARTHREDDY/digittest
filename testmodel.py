@@ -4,11 +4,11 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 
-model = tf.keras.models.load_model(r"//")
+model = tf.keras.models.load_model(r"model path")
 
 
 print("Loading dataset (with headers)...")
-df = pd.read_csv(r"//")
+df = pd.read_csv(r"data set path")
 
 
 df['label'] = pd.to_numeric(df['label'], errors='coerce')
