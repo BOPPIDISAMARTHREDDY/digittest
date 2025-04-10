@@ -34,20 +34,19 @@ for digit in range(10):
     pixels = row.iloc[1:].astype(np.uint8).values
     image = pixels.reshape(28, 28)
 
-    # Prepare input for model
     img_input = image / 255.0
     img_input = img_input.reshape(1, 28, 28, 1)
 
-    # Make prediction
+
     prediction = model.predict(img_input, verbose=0)
     predicted_digit = np.argmax(prediction)
 
-    # Show in subplot
+
     axs[digit].imshow(image, cmap='gray')
     axs[digit].set_title(f"Actual: {label} | Pred: {predicted_digit}")
     axs[digit].axis('off')
 
-# Hide any extra subplots (if any)
+
 for i in range(10, len(axs)):
     axs[i].axis('off')
 
